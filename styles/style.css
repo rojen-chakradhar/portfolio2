@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  /* font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal; */
+  font-family: "Barriecito", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  /* font-family: "Nabla", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "EDPT" 100,
+    "EHLT" 12; */
+  /* font-family: "Monofett", monospace;
+  font-weight: 400;
+  font-style: normal; */
+  outline: 1px dotted red;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 5vw;
+  display: flex;
+  gap: 10px;
+  background-color: purple;
+}
+
+aside {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+article, nav {
+  position: relative;
+  padding: 10px 5px;
+  border: 2px solid slateblue;
+  border-radius: 5px;
+  background-color: rebeccapurple;
+}
+
+.title {
+  position: absolute;
+  top: -25px;
+  font-family: "Monofett", monospace;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+main {
+  height: 100%;
+  flex: 1.5;
+}

@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rojen Chakradhar</title>
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <a href="/">
-        <img class="nav-logo" src="./assets/gifs/name.gif" loading="lazy" alt="logo">
-      </a>
-      <img class="open-btn nav-icon" onclick="menu('open')" src="./assets/gifs/menu.gif" loading="lazy" alt="open btn">
-      <ul class="nav-links" id="nav-links">
-        <img class="close-btn nav-icon" onclick="menu('close')" src="./assets/gifs/close.gif" loading="lazy" alt="close btn">
-        <a href="/">
-          <img class="nav-link" src="./assets/gifs/home.gif" loading="lazy" alt="home">
-        </a>
-        <a href="/index.html#about">
-          <img class="nav-link" src="./assets/gifs/about.gif" loading="lazy" alt="about">
-        </a>
-        <a href="/blog.html">
-          <img class="nav-link" src="./assets/gifs/blog.gif" loading="lazy" alt="blog">
-        </a>
-        <a href="/project.html">
-          <img class="nav-link" src="./assets/gifs/project.gif" loading="lazy" alt="project">
-        </a>
-        <a href="/index.html#contact">
-          <img class="nav-link" src="./assets/gifs/contact.gif" loading="lazy" alt="contact">
-        </a>
-      </ul>
-    </nav>
+    <aside>
+      <nav>
+        <p class="title">navigation</p>
+        <ul class="nav-links">
+          <a href=""><li>home</li></a>
+          <a href=""><li>about</li></a>
+          <a href=""><li>projects</li></a>
+          <a href=""><li>contact</li></a>
+        </ul>
+      </nav>
+      <article class="status">
+        <p class="title">my status</p>
+        <p class="text">braindead</p>
+      </article>
+      <article class="time">
+        <p class="title">my time</p>
+        <p class="text" id="time">10:46 pm</p>
+      </article>
+    </aside>
     <main>
-      <h1>rojen chakradhar</h1>
+      <h1 class="heading">welcome to my website!</h1>
+      <p class="recomendation">(best viewed in google chrome on a computer)</p>
     </main>
+    <aside>
+      <article class="theme">
+        <p class="title">style</p>
+        <button>switch style</button>
+      </article>
+      <article class="socials">
+        <p class="title">socials</p>
+        <button>instagram</button>
+      </article>
+      <article class="chat">
+        <p class="title">chat</p>
+      </article>
+    </aside>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
