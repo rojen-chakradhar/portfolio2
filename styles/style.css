@@ -214,3 +214,33 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 480px) {
+  .title, h2 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 960px) and (min-width: 481px) {
+  .title, h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  title, h2 {
+    font-size: 48px;
+  }
+  .text, link {
+    font-size: 18px;
+  }
+  link:hover {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  button {
+    font-size: 24px;
+  }
+}
