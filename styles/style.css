@@ -8,21 +8,21 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  /* list-style: none; */
   scroll-behavior: smooth;
   /* font-family: "Coral Pixels", serif;
   font-weight: 400;
   font-style: normal; */
-  font-family: "Barriecito", system-ui;
+  /* font-family: "Barriecito", system-ui;
   font-weight: 400;
-  font-style: normal;
-  /* font-family: "Nabla", system-ui;
+  font-style: normal; */
+  font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "EDPT" 100,
-    "EHLT" 12; */
+    "EHLT" 12;
   /* font-family: "Monofett", monospace;
   font-weight: 400;
   font-style: normal; */
@@ -35,6 +35,9 @@ body {
   height: 100%;
   width: 100%;
   background-color: purple;
+  background-image: url("../assets/gifs/e390cf34f033d7a4283e32401232d220.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -50,9 +53,18 @@ header {
   justify-content: center;
 }
 
-header img {
+header img:nth-child(odd) {
   height: 100%;
   width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+header img:nth-child(even) {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .wrapper {  
@@ -67,12 +79,15 @@ aside {
   gap: 30px;
 }
 
-article, nav {
+article, nav, main {
   position: relative;
   padding: 10px 5px;
-  border: 2px solid slateblue;
-  border-radius: 5px;
-  background-color: rebeccapurple;
+  border-image-slice: 27 27 27 27;
+  border-image-width: 5px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://img1.picmix.com/output/stamp/normal/4/7/8/4/254874_80ab7.gif");
+  border-style: solid;
+  background-color: #66339940;
 }
 
 .title {
@@ -89,10 +104,38 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+li {
+  line-height: 1;
+  padding: 10px 50px;
+  list-style: none;
+  background-image: url(../assets/gifs/flower\ of\ life.webp);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  transition: font-size 0.1s ease;
+}
+
+li:hover {
+  font-size: 18px;
+}
+
+.status img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 main {
   height: 100%;
   flex: 1.5;
+}
+
+main img {
+  width: 100%;
+  height: auto;
 }
