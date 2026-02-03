@@ -34,13 +34,30 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: purple;
 }
 
 body {
-  padding: 5vw;
+  padding: 0 5vw 5vw;
   display: flex;
-  gap: 10px;
-  background-color: purple;
+  flex-direction: column;
+  gap: 30px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+.wrapper {  
+  display: flex;
+  gap: 30px;
 }
 
 aside {
