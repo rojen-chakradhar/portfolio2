@@ -1,32 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  /* list-style: none; */
+  list-style: none;
   scroll-behavior: smooth;
-  /* font-family: "Coral Pixels", serif;
-  font-weight: 400;
-  font-style: normal; */
-  /* font-family: "Barriecito", system-ui;
-  font-weight: 400;
-  font-style: normal; */
-  font-family: "Nabla", system-ui;
+  /* font-family: "Nabla", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "EDPT" 100,
-    "EHLT" 12;
-  /* font-family: "Monofett", monospace;
+    "EHLT" 12; */
+  font-family: "Mansalva", sans-serif;
   font-weight: 400;
-  font-style: normal; */
-  outline: 1px dotted red;
+  font-style: normal;
+  /* outline: 1px dotted red; */
   color: #fff;
 }
 
@@ -36,7 +30,7 @@ body {
   width: 100%;
   background-color: purple;
   background-image: url("../assets/gifs/e390cf34f033d7a4283e32401232d220.gif");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 
@@ -79,9 +73,9 @@ aside {
   gap: 30px;
 }
 
-article, nav, main {
+article, nav, .o-box, footer {
   position: relative;
-  padding: 10px 5px;
+  padding: 10px;
   border-image-slice: 27 27 27 27;
   border-image-width: 5px;
   border-image-repeat: stretch stretch;
@@ -93,23 +87,32 @@ article, nav, main {
 .title {
   position: absolute;
   top: -25px;
-  font-family: "Monofett", monospace;
+  /* font-family: "Monofett", monospace; */
   font-size: 32px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
   text-transform: uppercase;
+}
+
+.text {
+  font-size: 16px;
 }
 
 ul {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 16px;
   text-transform: uppercase;
 }
 
-li {
+.links {
   line-height: 1;
+  font-size: 16px;
   padding: 10px 50px;
   list-style: none;
   background-image: url(../assets/gifs/flower\ of\ life.webp);
@@ -119,7 +122,7 @@ li {
   transition: font-size 0.1s ease;
 }
 
-li:hover {
+.links:hover {
   font-size: 18px;
 }
 
@@ -133,9 +136,81 @@ li:hover {
 main {
   height: 100%;
   flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-main img {
+main .welcomegif {
   width: 100%;
   height: auto;
+}
+
+.abt-header {
+  display: flex;
+  align-self: start;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Honk", system-ui;
+  font-size: 32px;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    text-transform: uppercase;
+}
+
+.abt-me img {
+  width: 50px;
+  height: auto;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.me {
+  font-size: 14px;
+  margin-left: 15px;
+  line-height: 1;
+  padding: 10px 40px;
+  list-style: none;
+  background-image: url(../assets/gifs/5922a2_0c89682da0894c88a79ab5b6f6e994a4-mv2.gif);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  transition: font-size 0.1s ease;
+}
+
+button {
+  width: 100%;
+  background-color: rebeccapurple;
+  border-color: rebeccapurple;
+  font-size: 18px;
+  transition: border-color 0.1s ease, font-size 0.1s ease;
+  cursor: pointer;
+}
+
+.counter {
+  margin-bottom: -20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
