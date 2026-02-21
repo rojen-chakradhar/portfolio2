@@ -200,9 +200,12 @@ button {
   justify-content: center;
 }
 
-.date {
-  margin-bottom: 10px;
+.date, .time{
   color: #ffffff90;
+}
+
+.time {
+  margin-bottom: 10px;
 }
 
 footer {
