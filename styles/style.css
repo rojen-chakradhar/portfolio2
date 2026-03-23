@@ -45,6 +45,13 @@ header img:nth-child(odd) {
   object-position: center;
 }
 
+header img:last-child {
+  height: 250px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 header img:nth-child(even) {
   width: 50%;
   height: auto;
